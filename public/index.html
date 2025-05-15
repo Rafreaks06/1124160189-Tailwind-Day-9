@@ -1,33 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tailwind Project</title>
-  <link href="../dist/output.css" rel="stylesheet">
+  <link href="../dist/output.css" rel="stylesheet" />
 </head>
-<body>
-    <div class="form-container">
-    <h2>Tambah Data Dosen Baru</h2>
-    <form method="" action="">
-        <div class="form-group">
-            <label>NID:</label>
-            <input type="text" name="nid" required maxlength="20">
-        </div>
-        <div class="form-group">
-            <label>Nama Dosen:</label>
-            <input type="text" name="nama" required maxlength="50">
-        </div>
-        <div class="form-group">
-            <label>Program Studi:</label>
-            <input type="text" name="prodi" required maxlength="30">
-        </div>
-        <div class="button-group">
-            <button type="submit" name = "submit" class="btn-submit">Simpan Data</button>
-            <a href="" class="cancel-btn">Batal</a>
-        </div>
-    </form>
-</div>
-</body>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
 
+  <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
+    <h2 class="text-2xl font-bold mb-6 text-center text-gray-800">Tambah Data Dosen Baru</h2>
+
+    <form method="" action="" class="space-y-4">
+      <div>
+        <label class="block text-sm font-medium text-gray-700 mb-1">NID</label>
+        <input type="text" name="nid" required maxlength="20"
+          class="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      </div>
+
+      <div>
+        <label class="block text-sm font-medium text-gray-700 mb-1">Nama Dosen</label>
+        <input type="text" name="nama" required maxlength="50"
+          class="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      </div>
+
+      <div>
+        <label class="block text-sm font-medium text-gray-700 mb-1">Program Studi</label>
+        <input type="text" name="prodi" required maxlength="30"
+          class="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      </div>
+
+      <div class="flex justify-between mt-6">
+        <button type="submit" name="submit"
+          class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-md">
+          Simpan Data
+        </button>
+        <a href="#" class="text-blue-600 hover:underline self-center">Batal</a>
+      </div>
+    </form>
+  </div>
+
+</body>
 </html>
